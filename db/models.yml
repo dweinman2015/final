@@ -1,0 +1,71 @@
+Toy:
+  name: string
+  short_description: string
+  long_description: text
+  link_to_buy: string
+  brand: string
+  good_for: array
+  durability: float
+  good_for_pet_size: array
+  color: string
+  material: string
+  price: float
+  rating: float
+
+Toyfeature:
+  toy_id: integer
+  feature1: string
+  feature2: string
+  feature3: string
+  feature4: string
+  feature5: string
+
+Toypicture:
+  toy_id: integer
+  picture1: string
+  picture2: string
+  picture3: string
+  picture4: string
+  picture5: string
+
+Toyreview:
+  toy_id: integer
+  user_id: integer
+  dog_id: integer
+  review: text
+  review_date: string
+  overall_rating: integer
+  durability_rating: integer
+
+Dog:
+  name: string
+  picture: string
+  size: string
+  breed: string
+  chew_strength: string
+  favorite_toy_id1: integer 
+  favorite_toy_id2: integer
+  favorite_toy_id3: integer
+  favorite_toy_id4: integer
+
+User:
+  email: string
+  twitter: string
+  facebook: string
+  facebook_password: string
+  google_id: string
+  google_password: string
+  username: string
+  password: string
+  picture: string
+  address1: string
+  address2: string
+  city: string
+  state: string
+  zip: integer
+  dog_id1: integer
+  dog_id2: integer
+  dog_id3: integer
+  dog_id4: integer
+  dog_id5: integer
+
