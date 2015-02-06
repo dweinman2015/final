@@ -1,0 +1,69 @@
+
+
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Value</th>
+  <tr>
+
+  <tr>
+    <td>id</td>
+    <td><%=@toy.id%></td>
+  </tr>
+
+  <tr>
+    <td>name</td>
+    <td><%=@toy.name%></td>
+  </tr>
+
+  <tr>
+    <td>short_description</td>
+    <td><%=@toy.short_description%></td>
+  </tr>
+
+  <tr>
+    <td>long_description</td>
+    <td><%=@toy.long_description%></td>
+  </tr>
+
+  <tr>
+    <td>link_to_buy</td>
+    <td><%=@toy.link_to_buy%></td>
+  </tr>
+
+  <tr>
+    <td>brand</td>
+    <td><%=@toy.brand%></td>
+  </tr>
+
+  <tr>
+    <td>good_for</td>
+    <td><%=@toy.good_for%></td>
+  </tr>
+
+  <tr>
+    <td>toy review</td>
+    <td><%=@toyreview.review%></td>
+  </tr>
+
+  <tr>
+    <td>durability</td>
+    <td><%=@toy.durability%></td>
+  </tr>
+
+  <tr>
+    <td>Toyfeatures</td>
+    <td><%=@toyfeature.feature1%><br> 
+    <%=@toyfeature.feature2%><br>
+    <%=@toyfeature.feature3%><br>
+    <%=@toyfeature.feature4%><br>
+    <%=@toyfeature.feature5%><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>This dog loves this toy</td>
+    <td><%=@dogsfavorite.name%> owned by <%=User.find_by(dog_id1: @dogsfavorite.id).username%>
+    </td>
+  </tr>
+</table>
