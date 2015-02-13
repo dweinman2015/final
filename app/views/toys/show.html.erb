@@ -1,4 +1,6 @@
-
+<h3><%=link_to "Edit Toy",edit_toy_path(@toy)%></h3><br>
+<h3><%=link_to "Back to the list of Toys", toys_path%></h3>
+<br>
 
 <table class="table table-hover">
   <tr>
@@ -28,7 +30,7 @@
 
   <tr>
     <td>link_to_buy</td>
-    <td><%=@toy.link_to_buy%></td>
+    <td><%=link_to "Amazon", @toy.link_to_buy%></td>
   </tr>
 
   <tr>
@@ -38,7 +40,14 @@
 
   <tr>
     <td>good_for</td>
-    <td><%=@toy.good_for%></td>
+    <td>
+      <li><input type="checkbox"> Xtra Small Dogs</li>
+      <li><input type="checkbox"> Small Dogs</li>
+      <li><input type="checkbox"> Medium Dogs</li>
+      <li><input type="checkbox"> Large Dogs</li>
+      <li><input type="checkbox"> Xtra Large Dogs</li>
+      <li><%=@toy.good_for%></li>
+    </td>
   </tr>
 
   <tr>

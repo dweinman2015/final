@@ -1,0 +1,76 @@
+<h3><%=link_to "Back to the list of Toys", toys_path%></h3><br>
+
+<%= form_for @toy do |form| %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :short_description %>
+    <%= form.text_field :short_description, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :long_description %>
+    <%= form.text_field :long_description, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :link_to_buy %>
+    <%= form.text_field :link_to_buy, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :brand %>
+    <%= form.text_field :brand, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :good_for %>
+    <%= check_box_tag(:good_for) %>
+    <%= label_tag(:good_for, "Xtra Small Dogs") %>
+    <%= check_box_tag(:good_for) %>
+    <%= label_tag(:good_for, "Small Dogs") %>
+    <%= check_box_tag(:good_for) %>
+    <%= label_tag(:good_for, "Medium Dogs") %>
+    <%= check_box_tag(:good_for) %>
+    <%= label_tag(:good_for, "Large Dogs") %>
+    <%= check_box_tag(:good_for) %>
+    <%= label_tag(:good_for, "Xtra Large Dogs") %>
+
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :durability %>
+    <%= form.text_field :durability, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :good_for_pet_size %>
+    <%= form.text_field :good_for_pet_size, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :color %>
+    <%= form.text_field :color, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :material %>
+    <%= form.text_field :material, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :price %>
+    <%= form.text_field :price, class: "form-control" %>
+  </div> 
+
+  <div class="form-group">
+    <%= form.label :rating %>
+    <%= form.text_field :rating, class: "form-control" %>
+  </div> 
+
+  <%= form.button 'Create New Toy', class: "btn btn-success" %>
+<% end %>

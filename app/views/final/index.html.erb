@@ -2,13 +2,10 @@
 <br>
 <p><i>
 This project is a webapp that is like Yelp for dog toys. Too often, owners of dogs are frustrated when they purchase a dog toy only to have their pooch reject it or tear it to shreds in 2 minutes. The online reviews at sites do a poor job because I can't compare their dog to mine. This webapp will have the users submit reviews and characteristics of their dogs so that each person will get a tailored recommendation for their pet. For instance, a hyperactive golden retriever might tear something to shreds and their owner would post a negative review. However, for my gentle beagle, that toy might be the best. Eventually, I want to adjust people's reviews (like netflix) to make approriate recommendations for the individual dog.</i></p><br>
-<h3>Here are all the toys:</h3>
-<p>
-<% @toys.each do |toy| %>
-  
-  <a href="/final/<%= toy.id%>"><%= toy.id %>: <%= toy.name%></a><br>
-<%end%>
-</p>
+
+
+<h3><%=link_to "Here are all the toys (WEEK 6 HOMEWORK)", toys_path%></h3>
+
 
 <h3>Here are all the toy reviews:</h3>
 <p>
